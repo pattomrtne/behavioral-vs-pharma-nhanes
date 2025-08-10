@@ -8,7 +8,7 @@ This capstone project explores whether behavioral and lifestyle factors alone ca
 - University of San Diego | Master of Science in Applied Data Science
 
 ## Goals
-- Evaluate the predictive value of behavioral features (diet, exercise, glucose, insulin, BMI)
+- Evaluate the predictive value of behavioral features
 - Compare models with and without medication variables
 - Identify key risk factors contributing to metabolic syndrome
 
@@ -20,16 +20,16 @@ This capstone project explores whether behavioral and lifestyle factors alone ca
 1. **Data Cleaning & Feature Engineering**
    - Created insulin resistance flags, lifestyle scores, and drug use indicators
 2. **Modeling**
-   - Logistic Regression, Random Forest, XGBoost
+   - Logistic Regression, Random Forest, XGBoost, Support Vector Machine, Multilayer Perceptron
    - GridSearchCV and SMOTE for class balancing
 3. **Evaluation**
-   - Metrics: Accuracy, Recall, F1 Score, AUC
+   - Metrics: Accuracy, Precision, Recall, F1 Score, AUC
    - Compared models with vs. without medication input
 
 ## Results
 - Models using behavioral data alone achieved solid predictive accuracy
 - Including pharmaceutical use improved model recall and reduced false negatives
-- Top predictors included glucose, triglycerides, BMI, and antihypertensive medication use
+- Top predictors included avg_kcal, avg_sugar, avg_fiber, avg_fat, physically_active, med_class_None
 
 ## Tools
 - Python (pandas, sklearn, xgboost, matplotlib)
